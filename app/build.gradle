@@ -2,7 +2,6 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 29
-    buildToolsVersion "23.0.3"
 
     defaultConfig {
         applicationId "com.example.android.quakereport"
@@ -22,5 +21,6 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     testImplementation 'junit:junit:4.13'
-    implementation 'com.android.support:appcompat-v7:28.0.0'
-    androidTestImplementation 'com.android.support:support-annotations:28.0.0'}
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    androidTestImplementation 'androidx.annotation:annotation:1.1.0'
+}
